@@ -9,8 +9,7 @@ public class Main {
         mainMenu();
     }
     private static void mainMenu(){
-
-
+        System.out.println("\nmasukan input:");
         var inputCommand = scanner.nextLine();
 
         switch (inputCommand){
@@ -326,6 +325,9 @@ public class Main {
             case "bola jari-jari":
                 System.out.println("jari-jari (r) = d÷2");
                 bolaR();
+                mainMenu();
+            default:
+                System.out.println("silahkan input => help , untuk Memunculkan list bangun datar dan bangun luas yang tersedia di project ");
                 mainMenu();
 
         }
