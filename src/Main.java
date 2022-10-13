@@ -9,8 +9,7 @@ public class Main {
         mainMenu();
     }
     private static void mainMenu(){
-
-
+        System.out.println("\nmasukan input:");
         var inputCommand = scanner.nextLine();
 
         switch (inputCommand){
@@ -327,6 +326,9 @@ public class Main {
                 System.out.println("jari-jari (r) = d÷2");
                 bolaR();
                 mainMenu();
+            default:
+                System.out.println("silahkan input => help , untuk Memunculkan list bangun datar dan bangun luas yang tersedia di project ");
+                mainMenu();
 
         }
 
@@ -345,7 +347,7 @@ public class Main {
             System.out.println("Volume Bola: " + roundingMode(b.volume(r)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -362,7 +364,7 @@ public class Main {
             System.out.println("Luas Permukaan Bola: " + roundingMode(b.luas(r)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -379,7 +381,7 @@ public class Main {
             System.out.println("Jari-jari Bola: " + roundingMode(b.jari(d)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -400,7 +402,7 @@ public class Main {
             System.out.println("Volume Tabung: " + roundingMode(tbg.volume(r, t)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -419,7 +421,7 @@ public class Main {
             System.out.println("Luas Permukaan Tabung: " + roundingMode(tbg.luasPermukaan(r, t)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -438,7 +440,7 @@ public class Main {
             System.out.println("Luas Selimut Tabung: " + roundingMode(tbg.luasSelimut(r, t)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -455,7 +457,7 @@ public class Main {
             System.out.println("Luas Alas Tabung: " + roundingMode(tbg.luasAlas(r)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -474,7 +476,7 @@ public class Main {
             System.out.println("Luas tinggi Tabung: " + roundingMode(tbg.tinggi(LP, r)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -493,7 +495,7 @@ public class Main {
             System.out.println("Jari-jari alas Tabung: " + roundingMode(tbg.jariAlas(V ,t)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -517,7 +519,7 @@ public class Main {
             System.out.println("Volume balok: " + roundingMode(blk.volume(p, l, t)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -538,7 +540,7 @@ public class Main {
             System.out.println("Luas Permukaan balok: " + roundingMode(blk.luasPermukaan(p, l, t)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -559,7 +561,7 @@ public class Main {
             System.out.println("Panjang balok: " + roundingMode(blk.panjang(v, l, t)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -580,7 +582,7 @@ public class Main {
             System.out.println("Lebar: " + roundingMode(blk.lebar(v, p, t)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -601,7 +603,7 @@ public class Main {
             System.out.println("Tinggi balok: " + roundingMode(blk.tinggi(v, l, p)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -620,7 +622,7 @@ public class Main {
             System.out.println("Diagonal Bidang balok: " + roundingMode(blk.diagonalBidang(p, l)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -641,7 +643,7 @@ public class Main {
             System.out.println("Diagonal Ruang Balok: " + roundingMode(blk.diagonalRuang(p, l, t)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -662,7 +664,7 @@ public class Main {
             System.out.println("Luas Bidang Diagonal balok: " + roundingMode(blk.luasBidangDiagonal(p, l, t)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -682,7 +684,7 @@ public class Main {
             System.out.println("Volume kubus: " + roundingMode(kbs.volume(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -699,7 +701,7 @@ public class Main {
             System.out.println("luas permukaan kubus: " + roundingMode(kbs.luasPermukaan(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -716,7 +718,7 @@ public class Main {
             System.out.println("Sisi rusuk kubus: " + roundingMode(kbs.sisiRusuk(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -733,7 +735,7 @@ public class Main {
             System.out.println("Diagonal sisi kubus: " + roundingMode(kbs.diagonalSisi(s1)) + "√2");
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -750,7 +752,7 @@ public class Main {
             System.out.println("diagonal ruang kubus: " + roundingMode(kbs.diagonalRuang(s1)) + "√3");
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -767,7 +769,7 @@ public class Main {
             System.out.println("Bidang diagonal kubus: " + roundingMode(kbs.bidangDiagonal(s1)) + "√2");
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -786,7 +788,7 @@ public class Main {
             System.out.println("Luas lingkaran: " + roundingMode(lngkrn.luas(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -803,7 +805,7 @@ public class Main {
             System.out.println("keliling lingkaran: " + roundingMode(lngkrn.keliling(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -820,7 +822,7 @@ public class Main {
             System.out.println("diameter lingkaran: " + roundingMode(lngkrn.diameter(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -837,7 +839,7 @@ public class Main {
             System.out.println("jari-jari lingkaran: " + roundingMode(lngkrn.jarijari(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -860,7 +862,7 @@ public class Main {
             System.out.println("Luas trapesium: " + roundingMode(trpsium.luas(s1, s2, s3)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -883,7 +885,7 @@ public class Main {
             System.out.println("Keliling trapesium: " + roundingMode(trpsium.keliling(s1, s2, s3, s4)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -904,7 +906,7 @@ public class Main {
             System.out.println("Tinggi trapesium: " + roundingMode(trpsium.tinggi(a, b, s)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -925,7 +927,7 @@ public class Main {
             System.out.println("Luas layang-layang: " + roundingMode(lyglyg.luas(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -944,7 +946,7 @@ public class Main {
             System.out.println("keliling layang-layang: " + roundingMode(lyglyg.keliling(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -963,7 +965,7 @@ public class Main {
             System.out.println("diagonal I layang-layang: " + roundingMode(lyglyg.d1(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -982,7 +984,7 @@ public class Main {
             System.out.println("diagonal II layang-layang: " + roundingMode(lyglyg.d2(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1003,7 +1005,7 @@ public class Main {
             System.out.println("Luas belah ketupat: " + roundingMode(blhktpt.luas(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1020,7 +1022,7 @@ public class Main {
             System.out.println("Keliling belah ketupat: " + roundingMode(blhktpt.keliling(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1037,7 +1039,7 @@ public class Main {
             System.out.println("Sisi belah ketupat: " + roundingMode(blhktpt.sisi(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1056,7 +1058,7 @@ public class Main {
             System.out.println("Diagonal I belah ketupat: " + roundingMode(blhktpt.d1(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1075,7 +1077,7 @@ public class Main {
             System.out.println("Diagonal II belah ketupat: " + roundingMode(blhktpt.d2(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1096,7 +1098,7 @@ public class Main {
             System.out.println("Luas jajar genjang: " + roundingMode(jjrgnjng.luas(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1115,7 +1117,7 @@ public class Main {
             System.out.println("Keliling jajar genjang: " + roundingMode(jjrgnjng.keliling(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1134,7 +1136,7 @@ public class Main {
             System.out.println("Alas jajar genjang: " + roundingMode(jjrgnjng.alas(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1153,7 +1155,7 @@ public class Main {
             System.out.println("Sisi Miring jajar genjang: " + roundingMode(jjrgnjng.miring(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1174,7 +1176,7 @@ public class Main {
             System.out.println("Luas segitiga: " + roundingMode(sgtg.luas(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1196,7 +1198,7 @@ public class Main {
             System.out.println("Keliling segitiga: " + roundingMode(sgtg.keliling(s1, s2, s3)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1216,7 +1218,7 @@ public class Main {
             System.out.println("Tinggi segitiga: " + roundingMode(sgtg.tinggi(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1236,7 +1238,7 @@ public class Main {
             System.out.println("Alas segitiga: " + roundingMode(sgtg.alas(s1, s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1256,7 +1258,7 @@ public class Main {
             System.out.println("Luas persegi: " + roundingMode(prsg.luas(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1273,7 +1275,7 @@ public class Main {
             System.out.println("Keliling persegi: " + roundingMode(prsg.keliling(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1290,7 +1292,7 @@ public class Main {
             System.out.println("Sisi persegi: " + roundingMode(prsg.sisi(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1307,7 +1309,7 @@ public class Main {
             System.out.println("Diagonal persegi: " + roundingMode(prsg.diagonal(s1)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1329,7 +1331,7 @@ public class Main {
             System.out.println("Luas persegi panjang: " + roundingMode(prsgpjg.luas(s1,s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1348,7 +1350,7 @@ public class Main {
             System.out.println("Keliling persegi panjang: " + roundingMode(prsgpjg.keliling(s1,s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1367,7 +1369,7 @@ public class Main {
             System.out.println("Panjang persegi panjang: " + roundingMode(prsgpjg.panjang(s1,s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1386,7 +1388,7 @@ public class Main {
             System.out.println("Lebar persegi panjang: " + roundingMode(prsgpjg.lebar(s1,s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
@@ -1405,7 +1407,7 @@ public class Main {
             System.out.println("Diagonal persegi panjang: " + roundingMode(prsgpjg.diagonal(s1,s2)));
             System.out.print("\nIngin mencoba lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
-            System.out.print("\n");
+            
         } while (coba == 'Y' || coba == 'y');
         mainMenu();
     }
