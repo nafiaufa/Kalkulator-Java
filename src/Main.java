@@ -4,7 +4,7 @@ import java.math.RoundingMode;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
-
+    
     public static void main(String[] args) {
         mainMenu();
     }
@@ -362,7 +362,7 @@ public class Main {
             System.out.print("\nMasukan jari-jari Bola: ");
             r = scanner.nextDouble();
             System.out.println("Luas Permukaan Bola: " + roundingMode(b.luas(r)));
-            System.out.print("\nIngin mencoba lagi? (y/t) : ");
+            System.out.print("\nIngin mencob31a lagi? (y/t) : ");
             coba = scanner.next().charAt(0);
 
         } while (coba == 'Y' || coba == 'y');
